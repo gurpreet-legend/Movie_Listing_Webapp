@@ -116,7 +116,7 @@ export default function Navbar({ setisSignin , handlesearch }) {
       .then((data) => {
         console.log(data);
         setisSignin(false);
-        history.push('/');
+        history.push('/login');
         toast.success('Successfully logged Out');
         dispatch({ type: 'CLEAR' });
       });
